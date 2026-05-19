@@ -16,8 +16,11 @@ body {
   color: #5b4b53;
 }
 
+.group {
+  background: #ff9fc6;
+}
+
 body,
-.group,
 .group .group,
 .region,
 .flash,
@@ -97,6 +100,31 @@ th,
   color: #7a6200;
 }
 
+#header .dropdown:hover a,
+#header .dropdown:focus a,
+#header .open a,
+#header .menu,
+#header .menu a,
+#header .menu a:hover,
+#header .menu a:focus {
+  background: #ffb7d5 !important;
+  color: #ffffff !important;
+}
+
+.reading h4.viewed {
+  padding: 0.5em;
+  border-radius: 999px;
+  font-size: 14px;
+  background: #ff9fc6;
+  color: #ffffff;
+}
+
+h4,
+.heading {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, sans-serif;
+  letter-spacing: 0.3px;
+}
+
 a,
 a:link {
   color: #e78fb5;
@@ -121,7 +149,7 @@ a:focus {
 .splash .module h3,
 #header .heading a,
 #header .heading a:visited {
-  color: #ffffff;
+  color: #5b4b53;
   text-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
 
