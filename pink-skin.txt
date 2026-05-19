@@ -1,0 +1,360 @@
+#header {
+  background-image: url("https://64.media.tumblr.com/870f8cd6c4daea620dc5c3dcacecabe7/fa5ffe897ba63ba9-4e/s1280x1920/c4a9a379ece95554fb55da3ca9e745ace2939ec9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #ffd9e8;
+}
+
+#header .heading {
+  height: 15em;
+}
+
+body {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  background: #fff7fb;
+  color: #5b4b53;
+}
+
+body,
+.group,
+.group .group,
+.region,
+.flash,
+fieldset,
+fieldset fieldset ul,
+form dl,
+#main .verbose legend,
+.verbose fieldset,
+.notice,
+ul.notes,
+table,
+th,
+td:hover,
+tr:hover,
+#modal,
+.ui-sortable li,
+.required .autocomplete,
+.autocomplete li,
+.autocomplete div.dropdown ul,
+.autocomplete .notice,
+.system .intro,
+.comment_error,
+.kudos_error,
+div.dynamic,
+.dynamic form,
+#ui-datepicker-div,
+.ui-datepicker table,
+.javascript,
+.statistics .index li:nth-of-type(even),
+#tos_prompt,
+.wrapper {
+  background: #fff7fb;
+  color: #5b4b53;
+  border-color: transparent;
+  outline: none;
+}
+
+#header ul.primary,
+#footer,
+dl.meta,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+form blockquote.userstuff,
+div.comment,
+li.comment,
+.toggled form,
+#dashboard,
+.secondary,
+.listbox,
+.thread .even,
+.system .tweet_list li {
+  background: #ffe5f0;
+  border-color: #ffd0e2;
+}
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a,
+#header .menu,
+#small_login,
+input:focus,
+textarea:focus,
+.group.listbox .index,
+.dashboard fieldset fieldset.listbox .index,
+th,
+.ui-datepicker tr:hover {
+  background: #ffd6e8;
+}
+
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus,
+.ui-datepicker td:hover,
+#tos_prompt .heading {
+  background: #fff1ad;
+  color: #7a6200;
+}
+
+a,
+a:link {
+  color: #e78fb5;
+  text-decoration: none;
+  border: none;
+}
+
+a:visited {
+  color: #d77fa4;
+}
+
+a:hover,
+a:focus {
+  color: #f0b400;
+}
+
+.heading,
+.heading a,
+.heading a:visited,
+.userstuff,
+#heading h3,
+.splash .module h3,
+#header .heading a,
+#header .heading a:visited {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+textarea,
+.observe_textlength,
+input,
+.input[role="combobox"],
+select,
+option {
+  background: #fffafd;
+  color: #5b4b53;
+  border: 1px solid #ffd0e2;
+  border-radius: .75em;
+}
+
+form.search input[type="text"] {
+  border-radius: 999px;
+  padding: 5px 5em 5px 12px;
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.current,
+.actions label,
+#header .actions a {
+  background: #ffb7d5;
+  color: white;
+  border: none;
+  text-shadow: none;
+  border-radius: 999px;
+  box-shadow: none;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+button:hover,
+input[type="submit"]:hover {
+  background: #ffe38f;
+  color: #7a6200;
+}
+
+.current,
+a.current,
+.current a:visited,
+#dashboard .current {
+  background: #ff9fc6;
+  color: white;
+}
+
+li.blurb {
+  border-radius: 1em;
+  border: none;
+  background: #fffafd;
+}
+
+.thread .comment,
+li.comment {
+  background: #fff0f6;
+  border-radius: 1em;
+}
+
+#dashboard {
+  padding: .5em 0;
+  border-radius: .75em;
+}
+
+#dashboard a:hover {
+  color: #ffffff;
+  background: #ffb7d5;
+  border-radius: .5em;
+}
+
+.filters .submit input,
+fieldset,
+li.comment,
+.bookmark div.user,
+.group,
+.notice,
+.listbox,
+.region,
+.flash {
+  border-radius: 1em;
+}
+
+* {
+  box-shadow: none !important;
+}
+
+#greeting img.icon,
+.primary .icon,
+.icon,
+.picture .icon img {
+  border-radius: 999px;
+}
+
+.notice {
+  border: 1px solid #ffd0e2;
+  padding: 1em;
+}
+
+#outer #footer {
+  background: #ffd9e8;
+  color: #8d6d7b;
+}
+
+a.tag {
+  color: #d96d9c;
+}
+
+a.tag:hover {
+  color: #f0b400;
+  background: transparent;
+}
+
+.autocomplete .dropdown ul li:hover,
+.autocomplete .dropdown li.selected {
+  background: #ffd6e8;
+  color: #5b4b53;
+}
+
+span.unread,
+.replied,
+span.claimed {
+  background: #fff1ad;
+  color: #7a6200;
+  border-radius: .4em;
+}
+
+.progress {
+  background: #ffb7d5 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff7fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffb7d5;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9fc6;
+}
+
+#header ul.primary a {
+  padding: .429em .75em;
+}
+
+#header ul.primary {
+  padding: 1.06em;
+}
+
+#header ul.primary > li:first-of-type {
+  margin-left: 4em;
+}
+
+#header .logo {
+  display: none;
+}
+
+.required-tags .rating-general-audience {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px -25px;
+}
+
+.required-tags .rating-explicit {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px -25px;
+}
+
+.required-tags .rating-mature {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px -25px;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px 0px;
+}
+
+.required-tags .rating-teen {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px -25px;
+}
+
+.required-tags .category-femslash {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px 0px;
+}
+
+.required-tags .category-gen {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px 0px;
+}
+
+.required-tags .category-slash {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px 0px;
+}
+
+.required-tags .category-het {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px 0px;
+}
+
+.required-tags .category-multi {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px 0px;
+}
+
+.required-tags .category-other {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px 0px;
+}
+
+.required-tags .complete-no {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -25px;
+}
+
+.required-tags .complete-yes {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -175px -25px;
+}
+
+.required-tags .warning-yes {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px -25px;
+}
+
+.required-tags .warning-choosenotto {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px -25px;
+}

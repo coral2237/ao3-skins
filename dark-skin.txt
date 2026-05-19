@@ -1,0 +1,828 @@
+#header {
+  background-image: url("https://64.media.tumblr.com/bf81d4027f160b5813065d8f7ceffbd5/11a6fd08861184a0-7d/s1280x1920/f7dd01f8396fd6127b09027b6285c0564d527e19.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #151726;
+}
+
+#header .heading {
+  height: 15em;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.125;
+  font-family: "Avenir",Helvetica,Arial,sans-serif;
+}
+
+body,
+.group,
+.group .group,
+.region,
+.flash,
+fieldset,
+fieldset fieldset ul,
+form dl,
+#main .verbose legend,
+.verbose fieldset,
+.notice,
+ul.notes,
+table,
+th,
+td:hover,
+tr:hover,
+.symbol .question:hover,
+#modal,
+.ui-sortable li,
+.required .autocomplete,
+.autocomplete li,
+.autocomplete div.dropdown ul,
+.autocomplete .notice,
+.system .intro,
+.comment_error,
+.kudos_error,
+div.dynamic,
+.dynamic form,
+#ui-datepicker-div,
+.ui-datepicker table {
+  background: #171717;
+  color: #CFCFCF;
+  border-color: transparent;
+  outline: #000000;
+}
+
+textarea,
+.observe_textlength,
+input,
+.input[role="combobox"] {
+  background: #1F1F1F;
+  color: #CFCFCF;
+  border-color: transparent;
+  outline: #000000;
+}
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a,
+#header .menu,
+#small_login,
+.group.listbox,
+fieldset fieldset.listbox,
+form blockquote.userstuff,
+input:focus,
+textarea:focus,
+li.relationships a,
+.group.listbox .index,
+.dashboard fieldset fieldset.listbox .index,
+th,
+#dashboard .secondary,
+.secondary,
+.thread .even,
+.system .tweet_list li,
+.ui-datepicker tr:hover {
+  background: #060606;
+}
+
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus,
+.splash .favorite li:nth-of-type(odd) a,
+.ui-datepicker td:hover,
+#tos_prompt .heading,
+#tos_prompt [disabled] {
+  background: #000000;
+}
+
+#outer,
+.javascript,
+.statistics .index li:nth-of-type(even),
+#tos_prompt,
+.announcement input[type="submit"] {
+  background: #171717;
+}
+
+#header .logo {
+  display: none;
+}
+
+#header ul.primary a {
+  padding: .429em .75em;
+}
+
+#header ul.primary {
+  padding: 1.06em;
+  box-shadow: none;
+}
+
+#header ul.primary > li:first-of-type {
+  margin-left: 4em;
+}
+
+#header ul.primary,
+#outer #footer,
+.toggled form {
+  background: #393939;
+}
+
+#header ul.primary,
+#footer,
+dl.meta,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+form blockquote.userstuff,
+div.comment,
+li.comment,
+.toggled form,
+form dl dt,
+form.single fieldset,
+#inner .module .heading,
+.bookmark .status span,
+.splash .news li,
+.filters .group dt.bookmarker {
+  border-color: #393939;
+}
+
+.home .header h2 {
+  border-bottom: 0;
+  padding-top: 20px;
+}
+
+.home .header ul.actions {
+  padding-top: 50px;
+}
+
+.heading a,
+.userstuff,
+.heading,
+#heading h3,
+.splash .module h3 {
+  font-family: "Avenir",Helvetica,Arial,sans-serif;
+}
+
+.header h4.heading {
+  font-size: 1.25em;
+}
+
+.userstuff.summary {
+  font-size: 1.2em;
+}
+
+.userstuff[role="article"] p {
+  font-size: 1.15em;
+}
+
+#chapters[role="article"] {
+  font-size: 1.1em;
+}
+
+a,
+a:link,
+a:visited:hover {
+  text-decoration: none;
+  border: none;
+  color: #7B7B7B;
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  font-family: "Avenir",Helvetica,Arial,sans-serif;
+}
+
+#dashboard ul {
+  border-color: #171717;
+}
+
+#outer .own[role="navigation region"] {
+  background: #393939;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#dashboard .current,
+.actions a:active,
+#outer .current,
+a.current,
+.current a:visited,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover {
+  background: #0E0E0E;
+  border-color: #393939;
+}
+
+#dashboard a:hover {
+  color: #CFCFCF;
+  background: #282828;
+  border-radius: 0.25em;
+}
+
+#dashboard .current,
+#dashboard .secondary,
+#dashboard a:focus,
+#dashboard a:hover,
+#header .actions a,
+#header ul.primary,
+#main .verbose legend,
+#main li.blurb,
+#modal,
+#outer .current,
+#ui-datepicker-div,
+.action,
+.action:link,
+.actions a,
+.actions a:active,
+.actions a:focus,
+.actions a:hover,
+.actions a:link,
+.actions input,
+.actions input:focus,
+.actions input:hover,
+.actions label,
+.autocomplete .notice,
+.blurb .blurb,
+.child,
+.comment_error,
+.current a:visited,
+.current,
+.dashboard .listbox .index,
+.draft .unread,
+.draft,
+.dynamic form,
+.filters .expander,
+.flash,
+.group .group,
+.group,
+.group.listbox,
+.kudos_error,
+.listbox .index,
+.mce-container button,
+.notice,
+.own,
+.region,
+.replied,
+.required .autocomplete,
+.secondary,
+.symbol .question:hover,
+.system .intro,
+.thread .comment,
+.toggled form,
+.ui-datepicker table,
+.ui-sortable li,
+.ui-sortable li:hover,
+.unreviewed,
+.unwrangled,
+.verbose fieldset,
+.wrapper,
+a.current,
+body,
+button,
+div.dynamic,
+dl.index dd,
+fieldset fieldset ul,
+fieldset fieldset,
+fieldset fieldset.listbox,
+fieldset,
+form blockquote.userstuff,
+form dl,
+input,
+input[type="submit"],
+li.blurb,
+span.claimed,
+span.unread,
+table,
+td:hover,
+textarea,
+th,
+tr:hover,
+ul.notes {
+  box-shadow: none !important;
+}
+
+.filters .submit input,
+fieldset fieldset,
+fieldset dl dl,
+.fieldset,
+fieldset,
+li.comment,
+.thread .eve,
+.bookmark div.user {
+  border-radius: 0.75em;
+}
+
+.reading h4.viewed {
+  padding: 0.50em;
+  border: 1px solid #CFCFCF;
+  border-radius: .25em;
+}
+
+li.blurb {
+  border-radius: 0.75em;
+  border: none;
+}
+
+#header .menu,
+#header .menu li a:link,
+#header .menu li a:visited {
+  border-radius: 0.75em;
+  border: none;
+}
+
+form.verbose legend,
+.verbose form legend {
+  height: auto;
+  width: auto;
+  font-size: 100%;
+  border: none;
+  padding: .5em;
+  box-shadow: none;
+  opacity: 1;
+  margin: 10px;
+  border-radius: .5em;
+}
+
+.actions input[type="text"],
+.actions input[type="text"]:focus,
+.textarea,
+.autocomplete input,
+form.search input[type="text"],
+form.search input[type="text"]:focus,
+li.search fieldset,
+.search input[type="text"],
+.search input[type="text"]:focus {
+  border: 1px solid #CFCFCF;
+  box-shadow: none;
+  font-size: 90%;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-appearance: none;
+}
+
+form.search input[type="text"] {
+  border-radius: 50vh;
+  padding: 5px 5em 5px 5px;
+}
+
+#header a,
+#header fieldset,
+#header form,
+#header p,
+#header li,
+#header h1,
+#small_login dl {
+  margin-right: 0.25em;
+}
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a,
+#header .menu,
+#small_login,
+#header .dropdown:hover .current+.menu,
+.actions a,
+.actions a:link,
+.actions a:active,
+.actions a:visited,
+.current span,
+.current,
+a.current,
+.actions .current,
+.current,
+.current a:visited,
+.current a:link,
+#dashboard .current,
+.actions a:active,
+span.unread,
+.replied,
+span.claimed,
+.own,
+.unread,
+.child,
+.unwrangled,
+.unreviewed {
+  border: none;
+  border-bottom: none;
+  background-image: none;
+  border-radius: .25em;
+  box-shadow: none;
+}
+
+.listbox > .heading {
+  padding: 10px;
+  padding-left: 15px;
+}
+
+thead,
+tfoot,
+tfoot td,
+th,
+tr:hover,
+col.name,
+input,
+textarea,
+#modal .content,
+.actions a,
+.action,
+.actions input,
+input[type="submit"],
+button,
+.btn,
+.current,
+.actions label,
+span.unread,
+.replied,
+span.claimed,
+.system .latest h3,
+.system div.news h3,
+.listbox,
+fieldset fieldset.listbox,
+dl.meta,
+.picture .header,
+.bookmark .user {
+  font-family: "Avenir",Helvetica,Arial,sans-serif;
+  margin-bottom: 10px;
+}
+
+.autocomplete div.dropdown ul {
+  border: 1px solid #CFCFCF;
+  border-radius: 0.5em;
+}
+
+select,
+option {
+  background: #060606;
+  color: #7B7B7B;
+  border-color: transparent;
+}
+
+select:focus,
+option:hover,
+option:focus {
+  background: #060606 !important;
+  color: #7B7B7B;
+  border-color: #000000;
+}
+
+.icon {
+  padding: 5px;
+}
+
+#greeting img.icon {
+  border-radius: 2em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.primary .icon,
+.icon {
+  border-radius: 4em;
+  height: 7em;
+  width: 7em;
+}
+
+.picture .icon img {
+  border-radius: 4em;
+  height: 7em;
+  width: 7em;
+  margin: -8px;
+}
+
+.index .skins .icon,
+.skins .primary .icon {
+  background: none;
+}
+
+.comment div.icon {
+  border-bottom: 0px;
+}
+
+.comment .icon .visitor {
+  background: url(/images/skins/iconsets/default/icon_user.png);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+span.symbol {
+  font-family: "Avenir", Georgia,serif;
+  border: 1px solid;
+  vertical-align: super;
+  border-radius: .75em;
+  box-shadow: none;
+}
+
+.tags input[type='radio'],
+.filters [type="radio"] + .indicator::before,
+.filters [type="radio"] + .indicator::before {
+  border-radius: 1em;
+  box-shadow: none;
+}
+
+#dashboard {
+  padding: .5em 0;
+  border-radius: .25em;
+}
+
+.faq .example,
+.guideline .example {
+  border: 0px;
+  border-radius: 5px;
+}
+
+.announcement input[type="submit"],
+.announcement .action {
+  font-size: .875em;
+  padding: .25em .5em;
+  border-radius: 2em;
+}
+
+#footer a:hover,
+#footer a:focus,
+a.tag:hover,
+.listbox .heading a.tag:visited:hover,
+.symbol .question,
+.qtip-content {
+  background: transparent;
+  color: #7B7B7B;
+}
+
+.autocomplete .dropdown ul li:hover,
+.autocomplete .dropdown li.selected {
+  background: #282828;
+  color: #CFCFCF;
+}
+
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite li:nth-of-type(odd) a:focus {
+  background: #3B7AB8;
+  color: #000000;
+}
+
+#header #search .text {
+  background: #161616;
+}
+
+#header .user {
+  padding: 0.7em 0 0;
+}
+
+#greeting p.icon {
+  padding: 0px;
+}
+
+#header .heading a,
+#header .heading a:visited {
+  color: #CFCFCF;
+}
+
+#header #greeting img,
+#header .user a:hover,
+#header .user a:focus,
+#header fieldset,
+#header form,
+#header p,
+.actions a:hover,
+.actions input:hover,
+.delete a,
+span.delete,
+span.unread,
+.replied,
+span.claimed,
+.draggable,
+.droppable,
+span.requested,
+a.work,
+.blurb h4 a:link,
+.blurb h4 img,
+.splash .module h3,
+.splash .browse li a:before,
+.required,
+.error,
+.comment_error,
+.kudos_error,
+a.cloud7,
+a.cloud8,
+#tos_prompt .heading {
+  color: #3B7AB8;
+}
+
+#greeting .icon,
+#dashboard,
+#dashboard.own,
+.error,
+.comment_error,
+.kudos_error,
+.LV_invalid,
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active,
+.qtip-content {
+  border-color: #393939;
+}
+
+a,
+a:link,
+a.tag,
+#header a,
+#header a:visited,
+#header .primary .open a,
+#header .primary .dropdown:hover a,
+#header .primary .dropdown a:focus,
+#header #search input:focus,
+#header #search input:hover,
+#dashboard a,
+#dashboard span,
+#dashboard .current,
+.heading,
+.group .heading,
+.filters dt a:hover {
+  color: #CFCFCF;
+}
+
+a:visited,
+.actions a:visited,
+.action a:link,
+.action a:visited,
+.listbox .heading a:visited,
+span.series .divider {
+  color: #9D9D9D;
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.current,
+.actions label,
+#header .actions a {
+  background: #393939;
+  border: none;
+  color: #CFCFCF;
+  text-shadow: none;
+  border-radius: 50vh;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus {
+  color: #7B7B7B;
+  border: none;
+}
+
+.actions a:active,
+.current,
+a.current,
+.current a:visited {
+  color: #CFCFCF;
+  background: #393939;
+  border-color: #CFCFCF;
+}
+
+ul.required-tags,
+.bookmark .status span,
+.blurb .icon {
+  opacity: 0.9;
+  border: 0;
+}
+
+#outer .group .heading,
+#header .actions a,
+fieldset.listbox .heading,
+.userstuff .heading,
+.heading,
+.userstuff h2 {
+  text-shadow: none;
+  color: #CFCFCF;
+  background: none;
+}
+
+.listbox {
+  clear: none;
+}
+
+fieldset fieldset.listbox {
+  outline: none;
+}
+
+form dd.required {
+  color: #CFCFCF;
+}
+
+.mce-container input:focus {
+  background: #F3EFEC;
+}
+
+.announcement .userstuff a,
+.announcement .userstuff a:link,
+.announcement .userstuff a:visited:hover {
+  color: #000000;
+}
+
+.announcement .userstuff a:visited {
+  color: #9D9D9D;
+}
+
+.announcement .userstuff a:hover,
+.announcement .userstuff a:focus {
+  color: #7B7B7B;
+}
+
+.event.announcement .userstuff a,
+.filters .expander {
+  color: #CFCFCF;
+}
+
+.progress {
+  background: rgb(16, 85, 82) linear-gradient(rgb(65, 110, 82) 0%, rgb(16, 85, 82) 50%, rgb(0, 85, 82) 51%, rgb(32, 103, 85) 100%) !important;
+}
+
+.notice {
+  border: 1px solid #9D9D9D;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 0 0 1 1 !important;
+}
+
+.required-tags .rating-general-audience {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px -25px;
+}
+
+.required-tags .rating-explicit {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px -25px;
+}
+
+.required-tags .rating-mature {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px -25px;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px 0px;
+}
+
+.required-tags .rating-teen {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px -25px;
+}
+
+.required-tags .category-femslash {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px 0px;
+}
+
+.required-tags .category-gen {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px 0px;
+}
+
+.required-tags .category-slash {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px 0px;
+}
+
+.required-tags .category-het {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px 0px;
+}
+
+.required-tags .category-multi {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -0px;
+}
+
+.required-tags .category-other {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px 0px;
+}
+
+.required-tags .complete-no {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -25px;
+}
+
+.required-tags .complete-yes {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -175px -25px;
+}
+
+.required-tags .warning-yes {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px -25px;
+}
+
+.required-tags .warning-choosenotto {
+  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px -25px;
+}
