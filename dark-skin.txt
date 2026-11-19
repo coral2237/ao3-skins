@@ -1,3 +1,36 @@
+ #workskin :is( .font-claude-response-body,
+.ds-markdown-paragraph,
+[class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ) {
+  background: #1d2228;
+  border-left: 3px solid #3B7AB8;
+  padding-left: .65em;
+}
+
+body:has(.userstuff :is( [class*="claude"],
+.ds-markdown-paragraph,
+[class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ))::before {
+  font-weight: bold;
+  color: white;
+  background: #87c0fa;
+  padding: 12px;
+  display: block;
+}
+
+body:has(.userstuff [class*="claude"])::before {
+  content: "⚠ AI-generated content detected: Claude";
+}
+
+body:has(.userstuff .ds-markdown-paragraph)::before {
+  content: "⚠ AI-generated content detected: Deepseek";
+}
+
+body:has(.userstuff :is( [class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ))::before {
+  content: "⚠ AI-generated content detected: ChatGPT";
+}
+
 #header {
   background-image: url("https://64.media.tumblr.com/bf81d4027f160b5813065d8f7ceffbd5/11a6fd08861184a0-7d/s1280x1920/f7dd01f8396fd6127b09027b6285c0564d527e19.jpg");
   background-repeat: no-repeat;
@@ -62,6 +95,40 @@ input,
   color: #CFCFCF;
   border-color: transparent;
   outline: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input:not([type]),
+textarea,
+.observe_textlength,
+select,
+.autocomplete input,
+.actions input[type="text"],
+form.search input[type="text"] {
+  border: 1px solid #393939;
+  border-radius: .5em;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input:not([type]):focus,
+textarea:focus,
+.observe_textlength:focus,
+select:focus {
+  border-color: #7B7B7B;
 }
 
 #header .actions a:hover,
@@ -316,14 +383,14 @@ fieldset dl dl,
 .fieldset,
 fieldset,
 li.comment,
-.thread .eve,
+.thread .even,
 .bookmark div.user {
   border-radius: 0.75em;
 }
 
 .reading h4.viewed {
   padding: 0.50em;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #393939;
   border-radius: .25em;
 }
 
@@ -353,19 +420,12 @@ form.verbose legend,
 }
 
 .actions input[type="text"],
-.actions input[type="text"]:focus,
 .textarea,
 .autocomplete input,
 form.search input[type="text"],
-form.search input[type="text"]:focus,
-li.search fieldset,
-.search input[type="text"],
-.search input[type="text"]:focus {
-  border: 1px solid #CFCFCF;
-  box-shadow: none;
+.search input[type="text"] {
   font-size: 90%;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-appearance: none;
 }
 
 form.search input[type="text"] {
@@ -455,23 +515,27 @@ dl.meta,
 }
 
 .autocomplete div.dropdown ul {
-  border: 1px solid #CFCFCF;
+  border: 1px solid #393939;
   border-radius: 0.5em;
 }
 
-select,
+select {
+  background: #1F1F1F;
+  color: #CFCFCF;
+  padding: .25em .5em;
+  min-height: 2em;
+}
+
 option {
   background: #060606;
-  color: #7B7B7B;
-  border-color: transparent;
+  color: #CFCFCF;
 }
 
 select:focus,
 option:hover,
 option:focus {
   background: #060606 !important;
-  color: #7B7B7B;
-  border-color: #000000;
+  color: #CFCFCF;
 }
 
 .icon {
@@ -524,7 +588,6 @@ span.symbol {
 }
 
 .tags input[type='radio'],
-.filters [type="radio"] + .indicator::before,
 .filters [type="radio"] + .indicator::before {
   border-radius: 1em;
   box-shadow: none;
@@ -667,12 +730,14 @@ span.series .divider {
 .action,
 .action:link,
 .actions input,
+.actions button,
 input[type="submit"],
 button,
 .current,
 .actions label,
 #header .actions a {
   background: #393939;
+  background-image: none;
   border: none;
   color: #CFCFCF;
   text-shadow: none;
@@ -683,8 +748,10 @@ button,
 
 .actions a:hover,
 .actions input:hover,
+.actions button:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:focus,
 #dashboard a:focus {
   color: #7B7B7B;
   border: none;
@@ -730,7 +797,7 @@ form dd.required {
 }
 
 .mce-container input:focus {
-  background: #F3EFEC;
+  background: #060606;
 }
 
 .announcement .userstuff a,
@@ -761,68 +828,96 @@ form dd.required {
   border: 1px solid #9D9D9D;
   padding: 1em;
   border-radius: 1em;
-  margin: 0 0 1 1 !important;
 }
 
-.required-tags .rating-general-audience {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px -25px;
-}
-
-.required-tags .rating-explicit {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px -25px;
-}
-
-.required-tags .rating-mature {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px -25px;
-}
-
+/* AO3 already positions each icon; only the image changes */
+.required-tags .rating-general-audience,
+.required-tags .rating-teen,
+.required-tags .rating-mature,
+.required-tags .rating-explicit,
 .required-tags .rating-notrated,
 .required-tags .category-none,
+.required-tags .category-gen,
+.required-tags .category-femslash,
+.required-tags .category-slash,
+.required-tags .category-het,
+.required-tags .category-multi,
+.required-tags .category-other,
 .required-tags .warning-no,
+.required-tags .warning-yes,
+.required-tags .warning-choosenotto,
+.required-tags .complete-no,
+.required-tags .complete-yes,
 .status .count {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px 0px;
+  background-image: url("https://raw.githubusercontent.com/coral2237/ao3-skins/main/ratings.png");
 }
 
-.required-tags .rating-teen {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px -25px;
+/* Footer: one grey band, columns without their own boxes, plain links */
+#footer,
+#outer #footer {
+  background: #393939;
+  border-top: none;
+  color: #CFCFCF;
 }
 
-.required-tags .category-femslash {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px 0px;
+#footer ul,
+#footer .module,
+#footer .menu {
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
-.required-tags .category-gen {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px 0px;
+#outer #footer .heading {
+  color: #9D9D9D;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  margin-bottom: .5em;
 }
 
-.required-tags .category-slash {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px 0px;
+#footer a,
+#footer a:visited,
+#footer button {
+  color: #CFCFCF;
+  text-decoration: none;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
 
-.required-tags .category-het {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px 0px;
+#footer a:hover,
+#footer a:focus,
+#footer button:hover,
+#footer button:focus {
+  color: #7B7B7B;
 }
 
-.required-tags .category-multi {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -0px;
+/* Header menus: the open or focused menu name and the hovered or focused item stand out */
+#header .primary .dropdown:hover > a,
+#header .primary .open > a,
+#header .primary .dropdown > a:focus,
+#header .primary > li > a:hover,
+#header .primary > li > a:focus {
+  background: #060606;
+  color: #CFCFCF;
+  border-radius: .75em .75em 0 0;
 }
 
-.required-tags .category-other {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px 0px;
+#header .primary .menu {
+  background: #060606;
+  border-radius: 0 .75em .75em .75em;
 }
 
-.required-tags .complete-no {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -25px;
+#header .primary .menu a:hover,
+#header .primary .menu a:focus {
+  background: #282828;
+  color: #CFCFCF;
 }
 
-.required-tags .complete-yes {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -175px -25px;
+/* AO3 paints every .dropdown white, including the Log In box and the account menus */
+.dropdown,
+#login {
+  background: transparent;
 }
 
-.required-tags .warning-yes {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px -25px;
-}
-
-.required-tags .warning-choosenotto {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px -25px;
+#header .menu li {
+  border-color: #1F1F1F;
 }

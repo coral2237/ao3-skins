@@ -1,3 +1,36 @@
+#workskin :is( .font-claude-response-body,
+.ds-markdown-paragraph,
+[class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ) {
+  background: #fff0f6;
+  border-left: 3px solid #e78fb5;
+  padding-left: .65em;
+}
+
+body:has(.userstuff :is( [class*="claude"],
+.ds-markdown-paragraph,
+[class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ))::before {
+  font-weight: bold;
+  color: white;
+  background: #ff9fc6;
+  padding: 12px;
+  display: block;
+}
+
+body:has(.userstuff [class*="claude"])::before {
+  content: "⚠ AI-generated content detected: Claude";
+}
+
+body:has(.userstuff .ds-markdown-paragraph)::before {
+  content: "⚠ AI-generated content detected: Deepseek";
+}
+
+body:has(.userstuff :is( [class*="selectionAnchorContainer"],
+[id*="selectionAnchorContainer"] ))::before {
+  content: "⚠ AI-generated content detected: ChatGPT";
+}
+
 #header {
   background-image: url("https://64.media.tumblr.com/870f8cd6c4daea620dc5c3dcacecabe7/fa5ffe897ba63ba9-4e/s1280x1920/c4a9a379ece95554fb55da3ca9e745ace2939ec9.jpg");
   background-repeat: no-repeat;
@@ -11,13 +44,15 @@
 }
 
 body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.125;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  background: #fff7fb;
-  color: #5b4b53;
 }
 
 .group {
-  background: #ff9fc6;
+  background: #FFE5F0;
 }
 
 body,
@@ -49,13 +84,111 @@ div.dynamic,
 #ui-datepicker-div,
 .ui-datepicker table,
 .javascript,
-.statistics .index li:nth-of-type(even),
+.statistics .index li:nth-of-type(2n),
 #tos_prompt,
 .wrapper {
-  background: #fff7fb;
+  background: #FFE5F0;
+  color: #5B4B53;
+  border-color: transparent;
+  outline: none;
+}
+
+textarea,
+.observe_textlength,
+input,
+.input[role="combobox"] {
+  background: #fffafd;
   color: #5b4b53;
   border-color: transparent;
   outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input:not([type]),
+textarea,
+.observe_textlength,
+select,
+.autocomplete input,
+.actions input[type="text"],
+form.search input[type="text"] {
+  border: 1px solid #ffd0e2;
+  border-radius: .75em;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input:not([type]):focus,
+textarea:focus,
+.observe_textlength:focus,
+select:focus {
+  border-color: #ff9fc6;
+}
+
+#small_login,
+.group.listbox,
+fieldset fieldset.listbox,
+form blockquote.userstuff,
+li.relationships a,
+input:focus,
+textarea:focus,
+.group.listbox .index,
+.dashboard fieldset fieldset.listbox .index,
+th,
+#dashboard .secondary,
+.secondary,
+.thread .even,
+.system .tweet_list li,
+.ui-datepicker tr:hover {
+  background: #ffd6e8;
+}
+
+.splash .favorite li:nth-of-type(odd) a,
+.ui-datepicker td:hover,
+#tos_prompt .heading,
+#tos_prompt [disabled] {
+  background: #fff1ad;
+  color: #7a6200;
+}
+
+#outer,
+.announcement input[type="submit"] {
+  background: #FFE5F0;
+}
+
+#header .logo {
+  display: none;
+}
+
+#header ul.primary a {
+  padding: .429em .75em;
+}
+
+#header ul.primary {
+  padding: 1.06em;
+  box-shadow: none;
+}
+
+#header ul.primary > li:first-of-type {
+  margin-left: 4em;
+}
+
+#header ul.primary,
+#outer #footer,
+.toggled form {
+  background: #FF9FC6;
 }
 
 #header ul.primary,
@@ -68,47 +201,123 @@ form blockquote.userstuff,
 div.comment,
 li.comment,
 .toggled form,
-#dashboard,
-.secondary,
-.listbox,
-.thread .even,
-.system .tweet_list li {
-  background: #ffe5f0;
+form dl dt,
+form.single fieldset,
+#inner .module .heading,
+.bookmark .status span,
+.splash .news li,
+.filters .group dt.bookmarker {
   border-color: #ffd0e2;
 }
 
-#header .actions a:hover,
-#header .actions a:focus,
-#header .dropdown:hover a,
-#header .open a,
-#header .menu,
-#small_login,
-input:focus,
-textarea:focus,
-.group.listbox .index,
-.dashboard fieldset fieldset.listbox .index,
-th,
-.ui-datepicker tr:hover {
+.home .header h2 {
+  border-bottom: 0;
+  padding-top: 20px;
+}
+
+.home .header ul.actions {
+  padding-top: 50px;
+}
+
+h4,
+.heading,
+.heading a,
+#heading h3,
+.splash .module h3 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.userstuff {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.header h4.heading {
+  font-size: 1.25em;
+}
+
+.userstuff.summary {
+  font-size: 1.2em;
+}
+
+.userstuff[role="article"] p {
+  font-size: 1.15em;
+}
+
+#chapters[role="article"] {
+  font-size: 1.1em;
+}
+
+a,
+a:link,
+a:visited:hover {
+  text-decoration: none;
+  border: none;
+  color: #e78fb5;
+}
+
+#dashboard .actions a,
+#dashboard .actions a:visited {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+#dashboard ul {
+  border-color: #FFE5F0;
+}
+
+#outer .own[role="navigation region"] {
   background: #ffd6e8;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-#header .dropdown .menu a:hover,
-#header .dropdown .menu a:focus,
-.ui-datepicker td:hover,
-#tos_prompt .heading {
-  background: #fff1ad;
-  color: #7a6200;
+#dashboard .current,
+.actions a:active,
+#outer .current,
+a.current,
+.current a:visited,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover {
+  background: #fff0f6;
+  border-color: #ffd0e2;
 }
 
-#header .dropdown:hover a,
-#header .dropdown:focus a,
-#header .open a,
-#header .menu,
-#header .menu a,
-#header .menu a:hover,
-#header .menu a:focus {
-  background: #ffb7d5 !important;
-  color: #ffffff !important;
+#dashboard {
+  background: #ffe5f0;
+  padding: .5em 0;
+  border-radius: .75em;
+}
+
+#dashboard a:hover {
+  color: #ffffff;
+  background: #ffb7d5;
+  border-radius: .5em;
+}
+
+* {
+  box-shadow: none !important;
+}
+
+.filters .submit input,
+fieldset fieldset,
+fieldset dl dl,
+.fieldset,
+fieldset,
+li.comment,
+.thread .even,
+.bookmark div.user,
+.group,
+.notice,
+.listbox,
+.region,
+.flash {
+  border-radius: 1em;
 }
 
 .reading h4.viewed {
@@ -117,95 +326,6 @@ th,
   font-size: 14px;
   background: #ff9fc6;
   color: #ffffff;
-}
-
-h4,
-.heading {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, sans-serif;
-  letter-spacing: 0.3px;
-}
-
-a,
-a:link {
-  color: #e78fb5;
-  text-decoration: none;
-  border: none;
-}
-
-a:visited {
-  color: #d77fa4;
-}
-
-a:hover,
-a:focus {
-  color: #f0b400;
-}
-
-.heading,
-.heading a,
-.heading a:visited,
-.userstuff,
-#heading h3,
-.splash .module h3,
-#header .heading a,
-#header .heading a:visited {
-  color: #5b4b53;
-  text-shadow: 0 0 10px rgba(255,255,255,0.4);
-}
-
-textarea,
-.observe_textlength,
-input,
-.input[role="combobox"],
-select,
-option {
-  background: #fffafd;
-  color: #5b4b53;
-  border: 1px solid #ffd0e2;
-  border-radius: .75em;
-}
-
-form.search input[type="text"] {
-  border-radius: 999px;
-  padding: 5px 5em 5px 12px;
-}
-
-.actions a,
-.actions a:link,
-.action,
-.action:link,
-.actions input,
-input[type="submit"],
-button,
-.current,
-.actions label,
-#header .actions a {
-  background: #ffb7d5;
-  color: white;
-  border: none;
-  text-shadow: none;
-  border-radius: 999px;
-  box-shadow: none;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.actions a:hover,
-.actions input:hover,
-.actions a:focus,
-.actions input:focus,
-button:hover,
-input[type="submit"]:hover {
-  background: #ffe38f;
-  color: #7a6200;
-}
-
-.current,
-a.current,
-.current a:visited,
-#dashboard .current {
-  background: #ff9fc6;
-  color: white;
 }
 
 li.blurb {
@@ -217,60 +337,220 @@ li.blurb {
 .thread .comment,
 li.comment {
   background: #fff0f6;
-  border-radius: 1em;
 }
 
-#dashboard {
-  padding: .5em 0;
-  border-radius: .75em;
+#header .menu,
+#header .menu li a:link,
+#header .menu li a:visited {
+  border-radius: 0.75em;
+  border: none;
 }
 
-#dashboard a:hover {
-  color: #ffffff;
-  background: #ffb7d5;
+form.verbose legend,
+.verbose form legend {
+  height: auto;
+  width: auto;
+  font-size: 100%;
+  border: none;
+  padding: .5em;
+  box-shadow: none;
+  opacity: 1;
+  margin: 10px;
   border-radius: .5em;
 }
 
-.filters .submit input,
-fieldset,
-li.comment,
-.bookmark div.user,
-.group,
-.notice,
-.listbox,
-.region,
-.flash {
-  border-radius: 1em;
+.actions input[type="text"],
+.textarea,
+.autocomplete input,
+form.search input[type="text"],
+.search input[type="text"] {
+  font-size: 90%;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
 
-* {
-  box-shadow: none !important;
-}
-
-#greeting img.icon,
-.primary .icon,
-.icon,
-.picture .icon img {
+form.search input[type="text"] {
   border-radius: 999px;
+  padding: 5px 5em 5px 12px;
 }
 
-.notice {
+#header a,
+#header fieldset,
+#header form,
+#header p,
+#header li,
+#header h1,
+#small_login dl {
+  margin-right: 0.25em;
+}
+
+#small_login,
+#header .dropdown:hover .current+.menu,
+.actions a,
+.actions a:link,
+.actions a:active,
+.actions a:visited,
+.current span,
+.current,
+a.current,
+.actions .current,
+.current a:visited,
+.current a:link,
+#dashboard .current,
+span.unread,
+.replied,
+span.claimed,
+.own,
+.unread,
+.child,
+.unwrangled,
+.unreviewed {
+  border: none;
+  border-bottom: none;
+  background-image: none;
+  border-radius: .4em;
+}
+
+.listbox > .heading {
+  padding: 10px;
+  padding-left: 15px;
+}
+
+thead,
+tfoot,
+tfoot td,
+th,
+tr:hover,
+col.name,
+input,
+textarea,
+#modal .content,
+.actions a,
+.action,
+.actions input,
+input[type="submit"],
+button,
+.btn,
+.current,
+.actions label,
+span.unread,
+.replied,
+span.claimed,
+.system .latest h3,
+.system div.news h3,
+.listbox,
+fieldset fieldset.listbox,
+dl.meta,
+.picture .header,
+.bookmark .user {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.autocomplete div.dropdown ul {
   border: 1px solid #ffd0e2;
-  padding: 1em;
+  border-radius: 0.75em;
 }
 
-#outer #footer {
-  background: #ffd9e8;
-  color: #8d6d7b;
+select {
+  background: #fffafd;
+  color: #5b4b53;
+  padding: .25em .5em;
+  min-height: 2em;
 }
 
-a.tag {
-  color: #d96d9c;
+option {
+  background: #fffafd;
+  color: #5b4b53;
 }
 
-a.tag:hover {
-  color: #f0b400;
+select:focus,
+option:hover,
+option:focus {
+  background: #ffd6e8 !important;
+  color: #5b4b53;
+}
+
+.icon {
+  padding: 5px;
+}
+
+#greeting img.icon {
+  border-radius: 2em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.primary .icon,
+.icon {
+  border-radius: 4em;
+  height: 7em;
+  width: 7em;
+}
+
+.picture .icon img {
+  border-radius: 4em;
+  height: 7em;
+  width: 7em;
+  margin: -8px;
+}
+
+.index .skins .icon,
+.skins .primary .icon {
+  background: none;
+}
+
+.comment div.icon {
+  border-bottom: 0px;
+}
+
+.comment .icon .visitor {
+  background: url(/images/skins/iconsets/default/icon_user.png);
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+span.symbol {
+  font-family: "Avenir", Georgia, serif;
+  border: 1px solid;
+  vertical-align: super;
+  border-radius: .75em;
+  box-shadow: none;
+}
+
+.tags input[type='radio'],
+.filters [type="radio"] + .indicator::before {
+  border-radius: 1em;
+  box-shadow: none;
+}
+
+.faq .example,
+.guideline .example {
+  border: 0px;
+  border-radius: 5px;
+}
+
+.announcement input[type="submit"],
+.announcement .action {
+  font-size: .875em;
+  padding: .25em .5em;
+  border-radius: 2em;
+}
+
+a:hover,
+a:focus,
+a.tag:hover,
+.listbox .heading a.tag:visited:hover,
+.symbol .question:hover {
   background: transparent;
+  color: #f0b400;
+}
+
+.symbol .question,
+.qtip-content {
+  background: transparent;
+  color: #d96d9c;
 }
 
 .autocomplete .dropdown ul li:hover,
@@ -279,16 +559,216 @@ a.tag:hover {
   color: #5b4b53;
 }
 
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite li:nth-of-type(odd) a:focus {
+  background: #ff9fc6;
+  color: #ffffff;
+}
+
+#header #search .text {
+  background: #fffafd;
+}
+
+#header .user {
+  padding: 0.7em 0 0;
+}
+
+#greeting p.icon {
+  padding: 0px;
+}
+
+.heading,
+.heading a,
+.heading a:visited,
+#heading h3,
+.splash .module h3,
+#header .heading a,
+#header .heading a:visited {
+  color: #5b4b53;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+#header .user a:hover,
+#header .user a:focus,
+.delete a,
+span.delete,
+.draggable,
+.droppable,
+span.requested,
+a.work,
+.blurb h4 a:link,
+.splash .module h3,
+.splash .browse li a:before,
+.required,
+.error,
+.comment_error,
+.kudos_error,
+a.cloud7,
+a.cloud8,
+#tos_prompt .heading {
+  color: #d96d9c;
+}
+
+#greeting .icon,
+#dashboard,
+#dashboard.own,
+.error,
+.comment_error,
+.kudos_error,
+.LV_invalid,
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active,
+.qtip-content {
+  border-color: #ffd0e2;
+}
+
+a.tag {
+  color: #d96d9c;
+}
+
+#header a,
+#header a:visited,
+#header .primary .open a,
+#header .primary .dropdown:hover a,
+#header .primary .dropdown a:focus,
+#header #search input:focus,
+#header #search input:hover,
+#dashboard a,
+#dashboard span,
+.filters dt a:hover {
+  color: #5b4b53;
+}
+
+#header ul.primary > li > a,
+#header ul.primary > li > a:visited,
+#header #search .button,
+#header #search input[type="submit"] {
+  color: #ffffff;
+}
+
+a:visited,
+.actions a:visited,
+.action a:link,
+.action a:visited,
+.listbox .heading a:visited,
+span.series .divider {
+  color: #d77fa4;
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+.actions button,
+input[type="submit"],
+button,
+.actions label,
+#header .actions a {
+  background: #ffb7d5;
+  background-image: none;
+  border: none;
+  color: #ffffff;
+  text-shadow: none;
+  border-radius: 999px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions button:hover,
+.actions a:focus,
+.actions input:focus,
+.actions button:focus,
+button:hover,
+input[type="submit"]:hover,
+#dashboard a:focus {
+  background: #ffe38f;
+  color: #7a6200;
+  border: none;
+}
+
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current {
+  color: #ffffff;
+  background: #ff9fc6;
+  border-color: #ffd0e2;
+}
+
+ul.required-tags,
+.bookmark .status span,
+.blurb .icon {
+  opacity: 0.9;
+  border: 0;
+}
+
+#outer .group .heading,
+#header .actions a,
+fieldset.listbox .heading,
+.userstuff .heading,
+.userstuff h2 {
+  text-shadow: none;
+  color: #5b4b53;
+  background: none;
+}
+
+.listbox {
+  clear: none;
+}
+
+fieldset fieldset.listbox {
+  outline: none;
+}
+
+form dd.required {
+  color: #5b4b53;
+}
+
+.mce-container input:focus {
+  background: #ffd6e8;
+}
+
+.announcement .userstuff a,
+.announcement .userstuff a:link,
+.announcement .userstuff a:visited:hover {
+  color: #000000;
+}
+
+.announcement .userstuff a:visited {
+  color: #d77fa4;
+}
+
+.announcement .userstuff a:hover,
+.announcement .userstuff a:focus {
+  color: #7a6200;
+}
+
+.event.announcement .userstuff a,
+.filters .expander {
+  color: #5b4b53;
+}
+
 span.unread,
 .replied,
 span.claimed {
   background: #fff1ad;
   color: #7a6200;
-  border-radius: .4em;
 }
 
 .progress {
   background: #ffb7d5 !important;
+}
+
+.notice {
+  border: 1px solid #ffd0e2;
+  padding: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -296,7 +776,7 @@ span.claimed {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff7fb;
+  background: #FFE5F0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -308,81 +788,138 @@ span.claimed {
   background: #ff9fc6;
 }
 
-#header ul.primary a {
-  padding: .429em .75em;
-}
-
-#header ul.primary {
-  padding: 1.06em;
-}
-
-#header ul.primary > li:first-of-type {
-  margin-left: 4em;
-}
-
-#header .logo {
-  display: none;
-}
-
-.required-tags .rating-general-audience {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px -25px;
-}
-
-.required-tags .rating-explicit {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px -25px;
-}
-
-.required-tags .rating-mature {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px -25px;
-}
-
+/* AO3 already positions each icon; only the image changes */
+.required-tags .rating-general-audience,
+.required-tags .rating-teen,
+.required-tags .rating-mature,
+.required-tags .rating-explicit,
 .required-tags .rating-notrated,
 .required-tags .category-none,
+.required-tags .category-gen,
+.required-tags .category-femslash,
+.required-tags .category-slash,
+.required-tags .category-het,
+.required-tags .category-multi,
+.required-tags .category-other,
 .required-tags .warning-no,
+.required-tags .warning-yes,
+.required-tags .warning-choosenotto,
+.required-tags .complete-no,
+.required-tags .complete-yes,
 .status .count {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px 0px;
+  background-image: url("https://raw.githubusercontent.com/coral2237/ao3-skins/main/ratings.png");
 }
 
-.required-tags .rating-teen {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px -25px;
+/* Footer: one pink band, columns without their own boxes, plain links */
+#footer,
+#outer #footer {
+  background: #FF9FC6;
+  border-top: none;
+  border-radius: 0;
+  color: #ffffff;
 }
 
-.required-tags .category-femslash {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -25px 0px;
+#footer ul {
+  background: #FF9FC6;
 }
 
-.required-tags .category-gen {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -50px 0px;
+#footer .module {
+  background: #FF9FC6;
 }
 
-.required-tags .category-slash {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) 0px 0px;
+#footer ul,
+#footer .module,
+#footer .menu {
+  border: none;
+  border-radius: 0;
 }
 
-.required-tags .category-het {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -75px 0px;
+#outer #footer .heading {
+  color: #ffffff;
+  text-shadow: none;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  font-size: 1.1em;
+  margin-bottom: .5em;
 }
 
-.required-tags .category-multi {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px 0px;
+#footer a,
+#footer a:visited,
+#footer button {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
 
-.required-tags .category-other {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px 0px;
+#footer a:hover,
+#footer a:focus,
+#footer button:hover,
+#footer button:focus {
+  color: #7a6200;
 }
 
-.required-tags .complete-no {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -100px -25px;
+/* Header menus: the open or focused menu name and the hovered or focused item stand out */
+#header .primary .dropdown:hover > a,
+#header .primary .open > a,
+#header .primary .dropdown > a:focus,
+#header .primary > li > a:hover,
+#header .primary > li > a:focus {
+  background: #ffb7d5;
+  color: #ffffff;
+  border-radius: .75em .75em 0 0;
 }
 
-.required-tags .complete-yes {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -175px -25px;
+#header .primary .menu {
+  background: #ffb7d5;
+  border-radius: 0 .75em .75em .75em;
 }
 
-.required-tags .warning-yes {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -150px -25px;
+#header .primary .menu a,
+#header .primary .menu a:visited {
+  color: #ffffff;
 }
 
-.required-tags .warning-choosenotto {
-  background: url(https://i.postimg.cc/3JDb3nn3/unnamed-1.jpg) -125px -25px;
+#header .primary .menu a:hover,
+#header .primary .menu a:focus {
+  background: #ff9fc6;
+  color: #ffffff;
+}
+
+#header .user .menu,
+#small_login {
+  background: #ffd6e8;
+}
+
+#header .user .menu a:hover,
+#header .user .menu a:focus {
+  background: #ffb7d5;
+  color: #ffffff;
+}
+
+/* AO3 paints every .dropdown white, including the Log In box and the account menus */
+.dropdown,
+#login {
+  background: transparent;
+}
+
+#header .menu li {
+  border-color: #ffc4dc;
+}
+
+/* Log In and the account links sit on the banner, so they get a pill to stay readable */
+#header .user.actions a,
+#header .user.actions a:visited,
+#header #login .dropdown-toggle {
+  background: #ffb7d5;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: .25em .9em;
+}
+
+#header .user.actions a:hover,
+#header .user.actions a:focus,
+#header #login .dropdown-toggle:hover,
+#header #login .dropdown-toggle:focus {
+  background: #ffe38f;
+  color: #7a6200;
 }
